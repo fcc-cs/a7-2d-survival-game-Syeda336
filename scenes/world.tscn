@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ccqv7knf4dpey"]
+
+[ext_resource type="PackedScene" uid="uid://b3gm65yvq2m2k" path="res://scenes/player.tscn" id="1_nnsk1"]
+[ext_resource type="PackedScene" uid="uid://bbrwkymp5gswx" path="res://scenes/tiles.tscn" id="1_rwgxs"]
+
+[node name="World" type="Node2D"]
+
+[node name="Tiles" parent="." instance=ExtResource("1_rwgxs")]
+
+[node name="Player" parent="." instance=ExtResource("1_nnsk1")]
+position = Vector2(583, 325)
+up_direction = Vector2(1, -0.0001)
+slide_on_ceiling = false
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2(2.5, 2.5)
+process_callback = 0
+limit_left = 0
+limit_top = 0
+limit_right = 1150
+limit_bottom = 648
