@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://jkydli17qox0"]
+
+[ext_resource type="PackedScene" uid="uid://bt7ll7xi7r1t4" path="res://scenes/apple_tree.tscn" id="2_525ij"]
+
+[node name="Apple_Trees" type="Node2D"]
+
+[node name="AppleTree" parent="." instance=ExtResource("2_525ij")]
+position = Vector2(579, 87)
+
+[node name="AppleTree2" parent="." instance=ExtResource("2_525ij")]
+position = Vector2(202, 227)
+
+[node name="AppleTree3" parent="." instance=ExtResource("2_525ij")]
+position = Vector2(482, 422)
+
+[node name="AppleTree4" parent="." instance=ExtResource("2_525ij")]
+position = Vector2(1095, 463)
+
+[node name="AppleTree5" parent="." instance=ExtResource("2_525ij")]
+position = Vector2(62, 500)
+
+[node name="AppleTree6" parent="." instance=ExtResource("2_525ij")]
+position = Vector2(1015, 121)
