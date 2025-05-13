@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="InventoryItem" load_steps=3 format=3 uid="uid://coob16if2y5y4"]
 
-[ext_resource type="Script" uid="uid://uix21n4yty3v" path="res://inventory/inventory_items.gd" id="1_cd3v3"]
+[ext_resource type="Script" uid="uid://uix21n4yty3v" path="res://scripts/inventory_items.gd" id="1_cd3v3"]
 [ext_resource type="Texture2D" uid="uid://bgwpihpb46aa" path="res://art/environment/apple-icon.png" id="2_cepck"]
 
 [resource]
