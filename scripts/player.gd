@@ -43,4 +43,10 @@ func player_anim(dir):
 
 func player():
 	pass
+
+func collect(item):
+	if inv:
+		inv.insert(item)
+	else:
+		print("Inventory is null! Assign it in the Player Inspector.")
 	
