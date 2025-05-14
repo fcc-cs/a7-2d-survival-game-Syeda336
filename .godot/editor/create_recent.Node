@@ -1,0 +1,15 @@
+CollisionShape2D
+Area2D
+Sprite2D
+StaticBody2D
+Label
+Panel
+CenterContainer
+GridContainer
+NinePatchRect
+ColorRect
+Control
+AnimationPlayer
+AnimatedSprite2D
+Marker2D
+Timer
