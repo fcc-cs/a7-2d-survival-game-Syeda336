@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://bt7ll7xi7r1t4"]
+[gd_scene load_steps=8 format=3 uid="uid://bt7ll7xi7r1t4"]
 
 [ext_resource type="Script" uid="uid://bwm6ublun7knv" path="res://scripts/apple_tree.gd" id="1_66v30"]
 [ext_resource type="Texture2D" uid="uid://diw3seufc31k8" path="res://art/environment/survivalgame-appletree.png" id="2_veaef"]
+[ext_resource type="Resource" uid="uid://coob16if2y5y4" path="res://inventoryitems/apple.tres" id="2_y0035"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y0035"]
 atlas = ExtResource("2_veaef")
@@ -35,6 +36,7 @@ radius = 22.0227
 
 [node name="AppleTree" type="Node2D"]
 script = ExtResource("1_66v30")
+item = ExtResource("2_y0035")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ddunx")

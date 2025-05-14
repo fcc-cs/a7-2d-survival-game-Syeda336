@@ -1,0 +1,32 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgdkn0ky06w2j"]
+
+[ext_resource type="PackedScene" uid="uid://cuu64v4vb44lx" path="res://scenes/stick_collectable.tscn" id="2_7vg88"]
+
+[node name="Sticks" type="Node2D"]
+
+[node name="stick_collectable1" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(382, 76)
+
+[node name="stick_collectable2" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(748, 16)
+
+[node name="stick_collectable3" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(17, 370)
+
+[node name="stick_collectable4" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(1110, 618)
+
+[node name="stick_collectable5" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(648, 583)
+
+[node name="stick_collectable" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(235, 597)
+
+[node name="stick_collectable6" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(45, 16)
+
+[node name="stick_collectable7" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(892, 386)
+
+[node name="stick_collectable8" parent="." instance=ExtResource("2_7vg88")]
+position = Vector2(359, 354)
