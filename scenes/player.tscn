@@ -1,7 +1,7 @@
 [gd_scene load_steps=71 format=3 uid="uid://b3gm65yvq2m2k"]
 
 [ext_resource type="Script" uid="uid://dwtpu44ydwlag" path="res://scripts/player.gd" id="1_g2els"]
-[ext_resource type="Resource" path="res://inventory/playersInv.tres" id="2_dqkch"]
+[ext_resource type="Resource" uid="uid://b7y4uevnduf30" path="res://inventoryitems/playersInv.tres" id="2_dqkch"]
 [ext_resource type="Texture2D" uid="uid://crtpbkekgsisw" path="res://art/characters/survivalgame-player-green.png" id="2_qhqgy"]
 [ext_resource type="PackedScene" uid="uid://djf0p1otkq07i" path="res://scenes/inventory_ui.tscn" id="4_dqkch"]
 
