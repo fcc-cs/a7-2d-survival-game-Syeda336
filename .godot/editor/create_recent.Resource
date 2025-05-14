@@ -1,3 +1,0 @@
-InventoryItem
-Resource
-Inventory
