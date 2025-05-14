@@ -7,12 +7,5 @@ res://scenes/apple_collectable.tscn
 res://scenes/inventory_ui.tscn
 res://scenes/inventroy_slot.tscn
 res://scenes/player.tscn
-res://scripts/inventory.gd
-res://scripts/inven_slot.gd
-res://scripts/inventroy_slot.gd
-res://scripts/player.gd
-res://scripts/apple_tree.gd
-res://scripts/inventory_ui.gd
-res://scripts/stick_collectable.gd
 res://scenes/stick_collectable.tscn
 res://scenes/sticks.tscn
