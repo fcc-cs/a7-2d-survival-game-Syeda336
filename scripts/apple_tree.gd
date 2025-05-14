@@ -5,6 +5,9 @@ var player_in_area = false
 
 var apple = preload("res://scenes/apple_collectable.tscn")
 
+@export var item: InventoryItem
+var player = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if state == "no apples":
@@ -26,6 +29,7 @@ func _process(delta: float) -> void:
 func _on_pickable_area_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
 		player_in_area = true
+		player = body
 
 
 func _on_pickable_area_body_exited(body: Node2D) -> void:
@@ -42,5 +46,6 @@ func drop_apple():
 	apple_instance.global_position = $Marker2D.global_position
 	get_parent().add_child(apple_instance)
 	
+	player.collect(item)
 	await get_tree().create_timer(3).timeout
 	$growth_timer.start()
