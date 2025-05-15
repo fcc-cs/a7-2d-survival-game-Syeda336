@@ -6,15 +6,14 @@
 [ext_resource type="PackedScene" uid="uid://dgdkn0ky06w2j" path="res://scenes/sticks.tscn" id="3_k0juu"]
 
 [node name="World" type="Node2D"]
+y_sort_enabled = true
 
 [node name="Tiles" parent="." instance=ExtResource("1_rwgxs")]
 
 [node name="Apple_Trees" parent="." instance=ExtResource("2_4wyf3")]
 
-[node name="Sticks" parent="." instance=ExtResource("3_k0juu")]
-
 [node name="Player" parent="." instance=ExtResource("1_nnsk1")]
-position = Vector2(583, 325)
+position = Vector2(583, 353)
 up_direction = Vector2(1, -0.0001)
 slide_on_ceiling = false
 
@@ -25,3 +24,29 @@ limit_left = 0
 limit_top = 0
 limit_right = 1150
 limit_bottom = 648
+
+[node name="Sticks" parent="." instance=ExtResource("3_k0juu")]
+
+[node name="collisions" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collisions"]
+position = Vector2(18, -27)
+polygon = PackedVector2Array(-12, 27, -12, 88, -5, 98, 7, 99, 17, 91, 15, 27, 347, 26, 349, 45, 358, 58, 436, 60, 448, 55, 455, 43, 456, 28, 749, 27, 748, 120, 758, 136, 780, 139, 789, 150, 788, 207, 795, 218, 812, 219, 816, 210, 816, 129, 807, 117, 797, 112, 784, 113, 777, 108, 776, 26, 835, 27, 837, 93, 845, 101, 1078, 102, 1084, 95, 1087, 27, 1132, 27, 1133, 212, 877, 212, 877, 301, 888, 301, 894, 291, 909, 291, 916, 301, 929, 301, 935, 292, 948, 292, 956, 301, 967, 301, 975, 291, 990, 291, 997, 302, 1008, 301, 1015, 292, 1031, 292, 1038, 303, 1049, 303, 1055, 292, 1070, 291, 1076, 302, 1088, 302, 1094, 292, 1110, 290, 1116, 301, 1130, 301, 1133, 290, 1133, 392, 965, 392, 952, 401, 948, 409, 948, 427, 942, 431, 862, 432, 855, 427, 856, 375, 849, 362, 836, 355, 821, 353, 815, 345, 815, 325, 808, 315, 797, 312, 788, 319, 788, 360, 795, 374, 807, 379, 821, 379, 829, 387, 829, 442, 836, 453, 847, 461, 955, 459, 972, 453, 975, 442, 976, 425, 978, 419, 1132, 420, 1133, 675, 1047, 676, 1046, 652, 437, 651, 437, 674, 368, 674, 368, 651, 239, 652, 238, 673, 204, 675, 206, 624, 195, 613, -18, 612, -18, 372, -11, 370, -4, 382, 6, 382, 15, 370, 30, 370, 38, 381, 48, 381, 56, 371, 71, 371, 75, 381, 87, 382, 96, 370, 107, 370, 114, 363, 129, 361, 129, 311, 111, 311, 106, 301, -18, 301, -18, 27, -16, 26, -35, 11, -265, 158, -208, 754, 506, 860, 1265, 758, 1307, 500, 1239, 139, 1239, -55, 403, -89)
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(667, 104, 734, 106, 745, 115, 744, 344, 737, 354, 662, 353, 655, 343, 655, 120)
+
+[node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(66, 66, 86, 66, 331, 66, 344, 76, 345, 139, 338, 153, 70, 154, 62, 154, 55, 142, 53, 80)
+
+[node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(463, 165, 535, 167, 554, 179, 554, 254, 537, 271, 460, 271, 445, 255, 446, 179)
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(503, 485, 735, 484, 752, 499, 754, 536, 736, 553, 504, 553, 489, 543, 487, 499)
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(864, 506, 1014, 506, 1025, 517, 1023, 586, 1015, 594, 871, 594, 859, 590, 855, 519)
+
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="collisions"]
+polygon = PackedVector2Array(266, 305, 335, 307, 344, 318, 344, 499, 336, 514, 270, 514, 256, 503, 253, 322)
