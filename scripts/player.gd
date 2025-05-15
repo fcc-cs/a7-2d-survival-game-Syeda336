@@ -45,6 +45,7 @@ func _physics_process(delta: float) -> void:
 	player_anim(direction)
 
 func player_anim(dir):
+	SPEED = 100
 	if player_state == "idle":
 		$AnimatedSprite2D.play("idle")
 		
