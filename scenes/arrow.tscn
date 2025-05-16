@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://bmvmq0lmb65ib" path="res://scripts/arrow.gd" id="1_23jat"]
 [ext_resource type="Texture2D" uid="uid://7lrmmtfr0mo7" path="res://icon.svg" id="2_q8ifc"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7ckq1"]
-radius = 12.0
-height = 198.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_23jat"]
+radius = 20.0
+height = 220.0
 
 [node name="Arrow" type="Area2D"]
 scale = Vector2(0.1, 0.1)
@@ -18,8 +18,10 @@ scale = Vector2(1.53906, 0.125)
 texture = ExtResource("2_q8ifc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3.69482e-11)
 rotation = 1.5708
-shape = SubResource("CapsuleShape2D_7ckq1")
+scale = Vector2(1, 1)
+shape = SubResource("CapsuleShape2D_23jat")
 
 [node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
 position = Vector2(0, 1.78814e-07)

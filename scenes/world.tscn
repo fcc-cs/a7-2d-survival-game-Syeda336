@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccqv7knf4dpey"]
+[gd_scene load_steps=6 format=3 uid="uid://ccqv7knf4dpey"]
 
+[ext_resource type="PackedScene" uid="uid://dr7t4b7sgogvf" path="res://scenes/enemies.tscn" id="1_71j4m"]
 [ext_resource type="PackedScene" uid="uid://b3gm65yvq2m2k" path="res://scenes/player.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://bbrwkymp5gswx" path="res://scenes/tiles.tscn" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://jkydli17qox0" path="res://scenes/Apple_Trees.tscn" id="2_4wyf3"]
@@ -9,6 +10,8 @@
 y_sort_enabled = true
 
 [node name="Tiles" parent="." instance=ExtResource("1_rwgxs")]
+
+[node name="Enemies" parent="." instance=ExtResource("1_71j4m")]
 
 [node name="Apple_Trees" parent="." instance=ExtResource("2_4wyf3")]
 
