@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://ccqv7knf4dpey"]
+[gd_scene load_steps=8 format=3 uid="uid://ccqv7knf4dpey"]
 
 [ext_resource type="PackedScene" uid="uid://dr7t4b7sgogvf" path="res://scenes/enemies.tscn" id="1_71j4m"]
+[ext_resource type="PackedScene" uid="uid://jcffeh3l6c33" path="res://scenes/npc.tscn" id="1_i7141"]
 [ext_resource type="PackedScene" uid="uid://b3gm65yvq2m2k" path="res://scenes/player.tscn" id="1_nnsk1"]
 [ext_resource type="PackedScene" uid="uid://bbrwkymp5gswx" path="res://scenes/tiles.tscn" id="1_rwgxs"]
 [ext_resource type="PackedScene" uid="uid://jkydli17qox0" path="res://scenes/Apple_Trees.tscn" id="2_4wyf3"]
@@ -15,7 +16,11 @@ y_sort_enabled = true
 [node name="Apple_Trees" parent="." instance=ExtResource("2_4wyf3")]
 y_sort_enabled = true
 
+[node name="npc" parent="." instance=ExtResource("1_i7141")]
+position = Vector2(290, 295)
+
 [node name="Enemies" parent="." instance=ExtResource("1_71j4m")]
+position = Vector2(14, 10)
 
 [node name="Player" parent="." instance=ExtResource("1_nnsk1")]
 y_sort_enabled = true
