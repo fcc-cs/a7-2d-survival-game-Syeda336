@@ -70,13 +70,13 @@ func _process(_delta):
 	if quest_active:
 		match current_quest_id:
 			0:
-				if stick >= 1:
+				if stick >= 3:
 					complete_quest()
 			1:
-				if apple >= 1:
+				if apple >= 6:
 					complete_quest()
 			2:
-				if slime >= 1:
+				if slime >= 2:
 					complete_quest()
 
 func complete_quest():
