@@ -1,80 +1,63 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/_9mBQXAD)
-# Assignment: Build a 2D Survival Game in Godot 4
+# Starting...
+- Game starts and the player appears.
 
-**Due Date:** `Sunday, May 18 @ 11:59 PM`
-**Weight:** **2x**
+# Features of the game...
+  *-Inventory System:*
+        There is a 12 box inventory, in which player can add items in it by collecting.
+        
+  *-Items:*
+        There are different items that the player can collect:
+        - Apples: There are many apple trees spread around, player needs to nevigate to the screen to find out the apples.
+                  When the player reaches an apple tree, the apple drops on the ground.
+        - Sticks: There are many sticks spread around, player needs to nevigate to the screen to find out the sticks.
+        - Slimes: There are also many slimes in the game, which are the enemy of the player.
+                  Player needs to kill the enemy, other wise the enemy start chasing the player and kills the player.
+                  They can be killed by throwing an arrow on them.
+                  
+  *NPC:*
+        - This is the worker that is working for helping the player around to survive.
+        - This tells the player to complete the quest so that the player can survive.
+        
+  *Control buttons:*
+        - Keyboard upper arrow: By pressing it, the player moves in the upward direction.
+        - Keyboard lower arrow: By pressing it, the player moves in the downward direction.
+        - Keyboard left arrow: By pressing it, the player moves in the left direction.
+        - Keyboard right arrow: By pressing it, the player moves in the right direction.
 
-## 📚 Learning Objectives
+        - For moving towards the north east direction: press 'Keyboard upper arrow' + 'Keyboard right arrow' together.
+        - For moving towards the north west direction: press 'Keyboard upper arrow' + 'Keyboard left arrow' together.
+        - For moving towards the south east direction: press 'Keyboard lower arrow' + 'Keyboard right arrow' together.
+        - For moving towards the south west direction: press 'Keyboard lower arrow' + 'Keyboard left arrow' together.
 
-By the end of this assignment you will be able to:
+        - Mouse left button: For collecting apples.
+        - Mouse right button: For checking the inventory. (If we again press it, then the inventory closed.)
+        - Ctrl + Mouse Left Button: For throwing an arrow. 
+                  - This has unique feature, is that if we press this only one time, the player stops moving, and then we just need 
+                    to click the Mouse Left Button for throwing the arrow on the slime.
+                  - For again start moving the player, click again 'Ctrl + Mouse Left Button'
 
-1. Follow a multi-step video tutorial and translate it into working Godot code.
-2. Use TileMaps, instancing, and signals to spawn collectibles and enemies.
-3. Implement basic player inventory, combat, and cutscene mechanics.
-4. Work in Git: commit often with clear messages.
+        - C button: It is for chatting with the npc.
+        - Q button: It is for taking a quest from npc to complete the task that npc gives us.
+        - Enter button: It is used to complete the chat with the npc, because when we click the "C" button, then the chatting box appears, and 
+                        that chatting box will disappear by pressing enter again and again until the last message gone.
+    
+  *Changing Scenes:*
+        - There is point in the game from where the player can enters the new scene.
+        - If the player reaches that point, frist thing appears is a black light.
+        - When the player enters the black light, then the black light removes, and the new scene loads.
+        - There the player can explore the new world.
 
-## 🎮 Assignment Overview
+# Video....
+      https://drive.google.com/file/d/1mDBAveeNeDbx3-aRukdB_HWUM3fQKPd1/view?usp=drivesdk
 
-In this assignment you will follow a video tutorial series on building a 2D survival game in Godot 4. This youtube playlist has 11 videos, each about 15-20 minutes long. That is a total of about 4 hours of video content.
-
-### Assignment Requirements
-- Watch one video each day (two videos if less than 15 minutes). Follow along and code the features shown in the video.
-- Make at least **2 commits per video**
-  - One commit for the base setup or partial feature
-  - One commit for the completed feature  
-
-All of the resources are linked below. You will be using a starter project that has the basic structure set up for you. You will need to clone this repo and create your own GitHub Classroom assignment.
-
-## 🔗 Resources
-
-* **Playlist:** "How to Make Survival Game in Godot" (11 videos, \~4 h 18 m total)
-  [https://www.youtube.com/playlist?list=PL3cGrGHvkwn2NOT1LSwf5d2XZmlc5Bjsn](https://www.youtube.com/playlist?list=PL3cGrGHvkwn2NOT1LSwf5d2XZmlc5Bjsn)
-* **Starter Project:** [GitHub Repo Template](https://github.com/your-org/godot-survival-template)
-* **Godot 4.0 Download:** [https://godotengine.org/download](https://godotengine.org/download)
-
-## 📝 Task Breakdown
-
-1. **Clone the starter repo** and create your own GitHub Classroom assignment.
-2. **Watch each video** in order and code along-do **exactly** what's shown (no copy/paste!).
-3. Make **2 commits per video** (you can do more but keep the commit format same):
-
-   * **Commit 1:** "\[Video #X] Base setup & partial feature"
-   * **Commit 2:** "\[Video #X] Completed feature"
-4. After all videos, add **one** stretch goal of your choice (e.g. a new enemy type, health bar, or extra cutscene).
-5. **Test** your game: it should run without errors, and include every core mechanic from the tutorial.
-
-## 🚀 Submission
-
-* Host your work on a **public GitHub repo** (linked via GitHub Classroom).
-* Include a **README** describing your stretch goal and how to run the project.
-* Attach or link a **short screencast (1-2 min)** demonstrating:
-
-  1. Player movement & collection
-  2. Inventory UI
-  3. Combat & enemy behavior
-  4. One cutscene trigger
-
-## 🧮 Grading Rubric
-
-| Category                                     |      Points |
-| -------------------------------------------- | ----------: |
-| **Working Code**                             |       **70 pt** |
-| • Game runs without crashing                 |       40 pt |
-| • Core gameplay implemented                  |       30 pt |
-| **Commits (2×11 = 22 req’d)**                |      **30 pt** |
-| • -2 pt per missing commit                   | (down to 0) |
-| • +1 pt per extra meaningful commit (max +5) |             |
+# Extra feature (no included in the videos): The player kills by the slime.
+    
 
 
-*Total: 100 pt*
-
----
-
-### Tips
-
-* **Branch per feature**: e.g. `video-03-collectibles`, merge back to `main`.
-* Write **descriptive commits**: "Implement TileMap auto-tiling" > "Done things".
-* Use Godot's **built-in profiler** if you hit performance hitches.
-* **Ask early** on Discord/office hours if you get stuck!
 
 
+
+
+
+
+        
