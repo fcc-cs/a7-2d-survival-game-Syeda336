@@ -3,6 +3,10 @@ extends CharacterBody2D
 var SPEED = 100.0
 var player_state
 
+signal stick_collected
+signal slime_collected
+signal apple_collected
+
 @export var inv: Inventory
 
 var bow_equiped = false
@@ -97,5 +101,15 @@ func player():
 func collect(item):
 	if inv:
 		inv.insert(item)
+		print(item)
+		
+		match item.resource_path:
+			"res://inventoryitems/stick.tres":
+				emit_signal("stick_collected")
+			"res://inventoryitems/slime.tres":
+				emit_signal("slime_collected")
+			"res://inventoryitems/apple.tres":
+				emit_signal("apple_collected")
+
 	else:
 		print("Inventory is null! Assign it in the Player Inspector.")

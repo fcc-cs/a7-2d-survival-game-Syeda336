@@ -17,18 +17,18 @@ y_sort_enabled = true
 y_sort_enabled = true
 
 [node name="npc" parent="." instance=ExtResource("1_i7141")]
-position = Vector2(290, 295)
+position = Vector2(541, 372)
 
 [node name="Enemies" parent="." instance=ExtResource("1_71j4m")]
 position = Vector2(14, 10)
+
+[node name="Sticks" parent="." instance=ExtResource("3_k0juu")]
 
 [node name="Player" parent="." instance=ExtResource("1_nnsk1")]
 y_sort_enabled = true
 position = Vector2(583, 353)
 up_direction = Vector2(1, -0.0001)
 slide_on_ceiling = false
-
-[node name="Sticks" parent="." instance=ExtResource("3_k0juu")]
 
 [node name="collisions" type="StaticBody2D" parent="."]
 
@@ -56,3 +56,7 @@ polygon = PackedVector2Array(266, 305, 335, 307, 344, 318, 344, 499, 336, 514, 2
 
 [node name="wolrd2D" parent="." instance=ExtResource("5_71j4m")]
 position = Vector2(0, 680)
+
+[connection signal="apple_collected" from="Player" to="npc" method="_on_player_apple_collected"]
+[connection signal="slime_collected" from="Player" to="npc" method="_on_player_slime_collected"]
+[connection signal="stick_collected" from="Player" to="npc" method="_on_player_stick_collected"]

@@ -1,0 +1,241 @@
+[gd_scene load_steps=3 format=3 uid="uid://igoovxsschp7"]
+
+[ext_resource type="Texture2D" uid="uid://w72r8cg0vcio" path="res://art/inventory_art/inventory-slot.png" id="1_3yyw7"]
+[ext_resource type="Script" uid="uid://rhjlpurob3fn" path="res://scripts/npc_quest.gd" id="1_yqrum"]
+
+[node name="npc_quest" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yqrum")
+
+[node name="quest1_ui" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -71.0
+offset_top = -119.0
+offset_right = 1.0
+offset_bottom = -79.0
+scale = Vector2(2, 2)
+texture = ExtResource("1_3yyw7")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 4
+
+[node name="Name" type="RichTextLabel" parent="quest1_ui"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 136.0
+offset_bottom = 23.0
+scale = Vector2(0.5, 0.5)
+text = "Task"
+
+[node name="Text" type="RichTextLabel" parent="quest1_ui"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 13.0
+offset_right = 224.0
+offset_bottom = 94.0
+scale = Vector2(0.3, 0.3)
+text = "Could you go pick up 3 sticks off the ground?"
+
+[node name="yes" type="Button" parent="quest1_ui"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 48.5
+offset_top = 28.5
+offset_right = 82.5
+offset_bottom = 59.5
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.784314)
+text = "yes"
+
+[node name="no" type="Button" parent="quest1_ui"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 62.0
+offset_top = 29.0
+offset_right = 90.0
+offset_bottom = 60.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.784314)
+text = "no"
+
+[node name="quest2_ui" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -71.0
+offset_top = -110.0
+offset_right = 1.0
+offset_bottom = -70.0
+scale = Vector2(2, 2)
+texture = ExtResource("1_3yyw7")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 4
+
+[node name="Name" type="RichTextLabel" parent="quest2_ui"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 136.0
+offset_bottom = 23.0
+scale = Vector2(0.5, 0.5)
+text = "Task"
+
+[node name="Text" type="RichTextLabel" parent="quest2_ui"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 13.0
+offset_right = 224.0
+offset_bottom = 94.0
+scale = Vector2(0.3, 0.3)
+text = "Go and collect around 6 apples!"
+
+[node name="yes" type="Button" parent="quest2_ui"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 48.5
+offset_top = 28.5
+offset_right = 82.5
+offset_bottom = 59.5
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.784314)
+text = "yes"
+
+[node name="no" type="Button" parent="quest2_ui"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 62.0
+offset_top = 29.0
+offset_right = 90.0
+offset_bottom = 60.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.784314)
+text = "no"
+
+[node name="quest3_ui" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -71.0
+offset_top = -110.0
+offset_right = 1.0
+offset_bottom = -70.0
+scale = Vector2(2, 2)
+texture = ExtResource("1_3yyw7")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 4
+
+[node name="Name" type="RichTextLabel" parent="quest3_ui"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 136.0
+offset_bottom = 23.0
+scale = Vector2(0.5, 0.5)
+text = "Task"
+
+[node name="Text" type="RichTextLabel" parent="quest3_ui"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 13.0
+offset_right = 224.0
+offset_bottom = 94.0
+scale = Vector2(0.3, 0.3)
+text = "Defeat 2 enemies!"
+
+[node name="yes" type="Button" parent="quest3_ui"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 48.5
+offset_top = 28.5
+offset_right = 82.5
+offset_bottom = 59.5
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.784314)
+text = "yes"
+
+[node name="no" type="Button" parent="quest3_ui"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 62.0
+offset_top = 29.0
+offset_right = 90.0
+offset_bottom = 60.0
+scale = Vector2(0.3, 0.3)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 0.784314)
+text = "no"
+
+[node name="finished_quest" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -71.0
+offset_top = -110.0
+offset_right = 1.0
+offset_bottom = -70.0
+scale = Vector2(2, 2)
+texture = ExtResource("1_3yyw7")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 4
+
+[node name="Name" type="RichTextLabel" parent="finished_quest"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 136.0
+offset_bottom = 23.0
+scale = Vector2(0.5, 0.5)
+text = "Worker "
+
+[node name="Text" type="RichTextLabel" parent="finished_quest"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 13.0
+offset_right = 224.0
+offset_bottom = 94.0
+scale = Vector2(0.3, 0.3)
+text = "Good Job!!
+Thank you so much"
+
+[node name="no_quest" type="NinePatchRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -71.0
+offset_top = -110.0
+offset_right = 1.0
+offset_bottom = -70.0
+scale = Vector2(2, 2)
+texture = ExtResource("1_3yyw7")
+patch_margin_left = 3
+patch_margin_top = 3
+patch_margin_right = 3
+patch_margin_bottom = 4
+
+[node name="Name" type="RichTextLabel" parent="no_quest"]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 136.0
+offset_bottom = 23.0
+scale = Vector2(0.5, 0.5)
+text = "Worker quest:"
+
+[node name="Text" type="RichTextLabel" parent="no_quest"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 13.0
+offset_right = 224.0
+offset_bottom = 94.0
+scale = Vector2(0.3, 0.3)
+text = "no current quest, 
+please come back later!"
+
+[connection signal="pressed" from="quest1_ui/yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="quest1_ui/no" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="quest2_ui/yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="quest2_ui/no" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="quest3_ui/yes" to="." method="_on_yes_pressed"]
+[connection signal="pressed" from="quest3_ui/no" to="." method="_on_no_pressed"]

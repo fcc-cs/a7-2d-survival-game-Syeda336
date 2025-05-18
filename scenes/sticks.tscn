@@ -17,7 +17,7 @@ position = Vector2(17, 370)
 position = Vector2(1110, 618)
 
 [node name="stick_collectable5" parent="." instance=ExtResource("2_7vg88")]
-position = Vector2(648, 583)
+position = Vector2(760, 535)
 
 [node name="stick_collectable" parent="." instance=ExtResource("2_7vg88")]
 position = Vector2(235, 597)
@@ -26,7 +26,7 @@ position = Vector2(235, 597)
 position = Vector2(45, 16)
 
 [node name="stick_collectable7" parent="." instance=ExtResource("2_7vg88")]
-position = Vector2(892, 386)
+position = Vector2(729, 283)
 
 [node name="stick_collectable8" parent="." instance=ExtResource("2_7vg88")]
-position = Vector2(359, 354)
+position = Vector2(410, 376)

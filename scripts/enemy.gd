@@ -64,10 +64,10 @@ func drop_slime():
 func slime_collect():
 	await get_tree().create_timer(1.5).timeout
 	slime.visible = false
-	player.collect(itemRes)
 	queue_free()
-
 
 func _on_slime_collect_area_body_entered(body: Node2D) -> void:
 	if body.has_method("player"):
 		player = body
+		player.collect(itemRes)
+		
